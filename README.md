@@ -29,11 +29,11 @@ Hover the mouse over a code snippet and click on it to select it.  Copy it to yo
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-![Desktop](./assets/images/screen-3PerRow.png)
+![Desktop](assets/images/screen-3PerRow.png)
 
-![Tablet](./assets/images/screen-2PerRow.png)
+![Tablet](assets/images/screen-2PerRow.png)
 
-![Mobile](./assets/images/screen-1PerRow.png)
+![Mobile](assets/images/screen-1PerRow.png)
 
 ## License
 
