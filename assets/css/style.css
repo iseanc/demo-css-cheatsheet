@@ -1,0 +1,122 @@
+/* CODE AUTHOR/EDITS: Sean Collins */
+
+* {
+    /* sets the box size calculation to include padding/borders */
+    box-sizing: border-box;
+}
+
+:root {
+    /* A list of variable for values used multiple times */
+    --text-pink:#e866ec;
+    --text-white:#fff;
+    --background-color: #33393f;
+    --background-gradient: #573258;
+    --main-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* Set basic font/background for the entire page */
+    font-family: var(--main-font-family);
+    background-color: var(--background-color);  
+}
+
+main {
+    /* Use CSS Flexbox model for page layout */
+    display: inline-flex;
+    /* Allow child elements to dislay on a row, and to wrap to a new line instead of scrolling off page */
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* Create a border around the main page card */
+    border: 2px dotted var(--text-pink);
+    /* space child elements evenly in the parent */
+    justify-content: space-evenly;
+    /* constrict outer width to <100% of page to prevent border from going outside of the edge of the viewport */
+    width: 90%;
+}
+
+header {
+    /* align header text center of page */
+    text-align: center;
+    font-family: var(--main-font-family);
+    color: var(--text-pink);
+    /* restrict header width to prevent text going out of viewport boundary */
+    width: 90%;
+}
+
+header p {
+    /* Color all paragraph text */
+    color: var(--text-white);
+}
+
+h3, p {
+    /* align child card titles and descriptive text in center of cards, set text color to match header and border colors */
+    text-align: center;
+    color: var(--text-pink);
+}
+
+.card {
+    /* Use flex box with column (top-down) alignment of children */
+    display:flex;
+    flex-direction: column;
+    /* Justify content to the left */
+    justify-content: flex-start;
+    /* Put a border around each card to delineate them */
+    border: 1px dotted var(--text-pink);
+    margin:4px;
+    min-width: 100px;
+    /* At larger viewport size, display cards in 3 card per row */
+    width: 32%;
+    /* Add a little animation to gradually change outline shadow color when a box is hovered over */
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover, .card:hover h3 {
+    /* Turn on a shadow on each card when hovered over (clicked)  */
+    box-shadow: 0px 0px 10px var(--text-pink);
+    
+}
+
+.card-snippet {
+    /* round corners */
+    border-radius:10px;
+    /* give background a color gradient */
+    background: linear-gradient(var(--background-gradient),var(--text-pink));
+    /* code snippet text is differentiated by color (in addition to font difference */
+    color: var(--text-white);
+}
+
+.card h3 {
+    /* decorate the card headers a little */
+    border: 1px solid var(--text-pink);
+    padding: 1%;
+    margin: 1%;
+}
+
+.card-snippet pre {
+    /* push code text in a little from borders */
+    padding: 10px;
+    /* make snippet text wrap when window size changes and prevent text from overflowing outside the card-snippet border */
+    white-space: pre-wrap;
+    overflow: auto;
+}
+
+.card-snippet pre:hover {
+    /* When code snippet is clicked, select all text to allow it to be copied easily */
+    user-select:all;
+}
+
+/* media query for larger screens */
+@media screen and (max-width: 992px) {
+    .card {
+        /* display cards 2 per row when window size shrinks to first break point, and keep spacing pretty */
+        width: 48%;
+        justify-content: space-between;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    /* At next smaller break point, stack cards into a single column */
+    .card {
+      width: 98%
+    }
+  }
