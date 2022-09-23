@@ -30,11 +30,11 @@ Hover the mouse over a code snippet and click on it to select it.  Copy it to yo
 
 ## Screenshots
 
-![Desktop](assets/Images/screen-3PerRow.png)
+![Desktop](assets/images/screen-3PerRow.png)
 
-![Tablet](assets/Images/screen-2PerRow.png)
+![Tablet](assets/images/screen-2PerRow.png)
 
-![Mobile](assets/Images/screen-1PerRow.png)
+![Mobile](assets/images/screen-1PerRow.png)
 
 ## License
 
