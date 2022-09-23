@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cheat Sheet</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Snippet Cheat Sheet</h1>
+        <p>Ever have trouble recalling CSS syntax? Give it a permanent home and add it to this page!  Select any snippet below and it'll automatically select all of the code for you to copy.</p>
+    </header>
+    <!-- Main body below header.  CSS on Main element is used to create the main card boundaries. -->
+    <main>
+        <!-- Each "card" section represents a smaller card displayed on the page -->
+        <section class="card">
+            <!-- Card Title -->
+            <h3>Flexbox Row</h3>
+            <!-- Card summary -->
+            <p>Use these three properties to create a Flexbox row layout</p>
+            <!-- Section to hold code snippet -->
+            <section class="card-snippet">
+                <!-- Code element changes the font to resemble computer code -->
+                <code>
+<!-- Pre element cannot be indented in the normal flow as text in a <pre> element is displayed on screen exactly as it is entered in the HTML file. -->
+<pre>
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+</pre>
+                </code>
+            </section>
+        </section>
+        <section class="card">
+            <h3>Flexbox Column</h3>
+            <p>Use this to create a Flexbox column layout.</p>
+            <section class="card-snippet">
+                <code>
+<pre>
+.column {
+    display: flex:
+    flex-direction: column
+}</pre>
+                </code>
+            </section>
+        </section>
+        <section class="card">
+            <h3>CSS Grid Layout</h3>
+            <p>Build a 12-column layout using CSS Grid</p>
+            <section class="card-snippet">
+                <code>
+<pre>
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns;
+repeat(12, 1fr);
+}
+</pre>
+                </code>
+            </section>
+        </section>
+        <section class="card">
+            <h3>Linear Gradients</h3>
+            <p>This will create a background linear gradient from top to bottom.</p>
+            <section class="card-snippet">
+                <code> 
+<pre>
+.linear-gradient-background {
+    background-image: linear-
+gradient (
+        rgba(232. 102. 236. 0.3) 0%
+        rgba(232. 102. 236. 0.6) 100%
+    );
+}
+</pre>
+                </code>
+            </section>
+        </section>
+        <section class="card">
+            <h3>Box Transition Glow</h3>
+            <p>Use transition and box shadows to glow on hover.</p>
+            <section class="card-snippet">
+                    <code>
+<pre>
+.code-card .card-header{
+    border-radiuse: 8px
+    transition: all 0.5s ease-in-out:
+}
+.code-card: hover,
+.code-card:hover .card-header  {
+    box-shadow; inset 0px 0px 8px
+    rgba(232, 102, 236,1) 0 0 15px
+    rgbs(232,102,236,1);
+}
+</pre>
+                    </code>
+            </section>
+        </section>  
+        <section class="card">
+            <h3>Overlay Card with Title</h3>
+            <p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+            <section class="card-snippet">
+                    <code>
+<pre>
+.card-header {
+    position: relative;
+    margin-top: -20px;
+}
+</pre>
+                    </code>
+             </section>
+        </section>
+    </main>
+    <!-- Page footer -->
+    <footer>
+        <h3>Made with Luv and CSS</h3>
+    </footer>  
+
+</body>
+</html>
