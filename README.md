@@ -16,6 +16,7 @@ Project created as a practical demonstration of advanced CSS concepts presented 
 
 - [Deployment](#deployment)
 - [Usage](#usage)
+- [Screenshots](#screenshots)
 - [License](#license)
 - [Features](#features)
 
@@ -24,16 +25,16 @@ Project created as a practical demonstration of advanced CSS concepts presented 
 What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
 
 ## Usage
-cs
+
 Hover the mouse over a code snippet and click on it to select it.  Copy it to your clipboard and paste into a code editor or other location.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+## Screenshots
 
-![Desktop](assets/images/screen-3PerRow.png)
+![Desktop](assets/Images/screen-3PerRow.png)
 
-![Tablet](assets/images/screen-2PerRow.png)
+![Tablet](assets/Images/screen-2PerRow.png)
 
-![Mobile](assets/images/screen-1PerRow.png)
+![Mobile](assets/Images/screen-1PerRow.png)
 
 ## License
 
